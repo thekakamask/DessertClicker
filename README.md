@@ -6,22 +6,29 @@
    - **Progression System**: Unlock more expensive desserts as you sell more.
    - **Revenue Tracking**: Display total revenue and desserts sold in real time.
    - **Share Progress**: Share your achievements with friends using the share button.
+   - **Separation of Concerns**: Business logic is managed by the ViewModel, ensuring a simple and responsive user interface (UI).
    - **Modern Design**: Built with Jetpack Compose for a smooth, declarative UI experience.
 
 ## 🛠️ Tech Stack
    - **Kotlin**: For clean, modern, and concise code.
    - **Jetpack Compose**: For building a declarative and reactive UI.
    - **Material 3**: For a modern and consistent UI design.
-   - **ViewModel and State Management**: To handle state changes and user interactions efficiently.
+   - **ViewModel**: State management and business logic separation.
+   - **StateFlow**: Efficient and responsive state management.
 
 ## 📦 Project Structure
 **Packages**:
 1. **data**:
-   - Provides the list of desserts and their details
+   - Contains the list of desserts and their properties.
+   - Sets the UI state with the DessertUiState class.
 2. **model**:
    - Data class representing a dessert
 3. **ui**:
-   - Main entry of the application with top bar for share functionnality, main screen logic and layout, revenue and sales details
+   - Contains the main implementation of the application with: 
+      - **ViewModel**: Business logic and state management.
+      - **DessertClickerApp**: Main screen that collects and displays application status.
+      - **DessertClickerScreen**: Managing the display of sales and revenue details.
+   - Provides components for the app bar and sharing.
 
 ## 🚀 How to Play
 1. **Launch the App**: Start the Dessert Clicker game on your device or emulator.

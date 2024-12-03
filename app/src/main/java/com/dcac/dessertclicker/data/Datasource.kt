@@ -3,9 +3,6 @@ package com.dcac.dessertclicker.data
 import com.dcac.dessertclicker.R
 import com.dcac.dessertclicker.model.Dessert
 
-/**
- * [Datasource] generates a list of [Dessert]
- */
 object Datasource {
     val dessertList = listOf(
         Dessert(R.drawable.cupcake, 5, 0),
